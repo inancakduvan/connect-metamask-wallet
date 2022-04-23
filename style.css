@@ -50,6 +50,16 @@ html, body {
     font-weight: 600;
 }
 
+#mobileDeviceWarning {
+    display: none;
+    margin-top: 24px;
+    color: rgb(247, 47, 47);
+}
+
+#mobileDeviceWarning.show {
+    display: block;
+}
+
 .alert {
     z-index: 10;
     position: fixed;
