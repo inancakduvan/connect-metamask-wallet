@@ -1,7 +1,7 @@
 const connectButton = document.getElementById("connectButton");
+const walletID = document.getElementById("walletID");
 const reloadButton = document.getElementById("reloadButton");
 const installAlert = document.getElementById("installAlert");
-const walletID = document.getElementById("walletID");
 
 const startLoading = () => {
   connectButton.classList.add("loadingButton");
