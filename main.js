@@ -30,7 +30,9 @@ const isMobile = () => {
       check = true;
   })(navigator.userAgent || navigator.vendor || window.opera);
 
-  return check;
+  alert(navigator.userAgent);
+
+  return check && !navigator.userAgent.toLowerCase().includes("metamask");
 };
 
 connectButton.addEventListener("click", () => {
