@@ -35,8 +35,12 @@ connectButton.addEventListener("click", () => {
         stopLoading();
       });
   } else {
-    window.open("https://metamask.io/download/", "_blank");
-    installAlert.classList.add("show");
+    if (isMobile()) {
+      mobileDeviceWarning.classList.add("show");
+    } else {
+      window.open("https://metamask.io/download/", "_blank");
+      installAlert.classList.add("show");
+    }
   }
 });
 
